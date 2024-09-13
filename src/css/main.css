@@ -1,0 +1,176 @@
+/* Typographie */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: #00ffcc;
+}
+
+/* Header */
+header {
+    background: #121212;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+/* Burger menu pour mobile */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #00ffcc;
+    transition: all 0.3s ease;
+}
+
+/* Sections */
+.home-section {
+    height: 100vh;
+    background: url('../assets/images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #121212;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* About Section */
+.about-section, .projects-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+/* Footer */
+footer {
+    background: #121212;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #121212;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .home-content h2 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+}
