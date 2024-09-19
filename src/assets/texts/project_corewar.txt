@@ -1,0 +1,1 @@
+Corewar est basé sur le jeu décrit par A. K. Dewdney dans son article de Scientific American de 1984. Le but du jeu est de programmer des "guerriers" en assembleur qui se battent dans une machine virtuelle jusqu'à ce qu'il ne reste qu'un seul programme actif.

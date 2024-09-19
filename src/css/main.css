@@ -26,6 +26,12 @@ nav {
     margin: 0 auto;
 }
 
+.preformatted {
+    white-space: pre-wrap; /* Conserve les espaces et les retours à la ligne */
+    font-family: monospace; /* Optionnel, pour une apparence de texte préformaté */
+    margin: 10px; /* Ajoute des marges pour l'espacement */
+}
+
 .logo h1 {
     font-size: 24px;
     cursor: pointer;
@@ -85,6 +91,24 @@ nav {
     margin-bottom: 30px;
 }
 
+.CoreWar {
+    flex: 1 1 calc(33.333% - 20px); /* Trois éléments par ligne avec un espace de 20px entre eux */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
+}
+
+.CoreWar img {
+    width: 30%; /* Ajuste l'image à la largeur du conteneur */
+    max-width: 100%; /* Ne dépasse pas la largeur du conteneur */
+    height: auto; /* Conserve le ratio d'aspect */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour l'image */
+    transition: transform 0.3s ease; /* Effet de transition au survol */
+}
+
+.CoreWar img:hover {
+    transform: scale(1.25); /* Agrandissement léger au survol */
+}
+
 .btn {
     padding: 10px 20px;
     background-color: #00ffcc;
@@ -105,6 +129,12 @@ nav {
     text-align: center;
 }
 
+#about-text, #project-corewar {
+    color: #ffffff; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    margin: 10px; /* Marge pour l'espace */
+    padding: 10px; /* Padding pour l'espace intérieur */
+}
 .project-grid {
     display: flex;
     flex-wrap: wrap;
