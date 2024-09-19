@@ -1,0 +1,1 @@
+YouTube Media Downloader permet aux utilisateurs de télécharger et de convertir des contenus multimédias de YouTube en fichiers audio et vidéo. Le projet est conçu pour être facile à utiliser et fournit des options pour télécharger des vidéos individuelles, des fichiers audio, et des listes de lecture complètes.

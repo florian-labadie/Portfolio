@@ -16,3 +16,6 @@ function loadText(file, elementId) {
 
 loadText('assets/texts/about_me.txt', 'about-text');
 loadText('assets/texts/project_corewar.txt', 'project-corewar');
+loadText('assets/texts/project_sylveria.txt', 'project-sylveria');
+loadText('assets/texts/project_A-Maze-D.txt', 'project-A-Maze-D');
+loadText('assets/texts/project_Youtube-Downloader.txt', 'project-Youtube-Downloader');

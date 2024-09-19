@@ -1,0 +1,1 @@
+L'algorithme A-Maze-D résout le problème de navigation des robots à travers un labyrinthe. Il lit une configuration de labyrinthe depuis l'entrée standard, détermine la validité de la configuration du labyrinthe, et calcule les chemins les plus courts pour tous les robots de l'entrée à la sortie.
