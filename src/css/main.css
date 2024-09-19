@@ -1,203 +1,208 @@
 /* Typographie */
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-color: #1c1c1c;
+    font-family: 'Montserrat', sans-serif; /* Police principale du site */
+    color: #ffffff; /* Couleur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+    background-color: #1c1c1c; /* Couleur de fond */
 }
 
 h1, h2, h3 {
-    font-family: 'Press Start 2P', cursive;
-    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive; /* Police des titres */
+    color: #00ffcc; /* Couleur des titres */
 }
 
 /* Header */
 header {
-    background: #121212;
-    padding: 20px 0;
+    background: #121212; /* Couleur de fond du header */
+    padding: 20px 0; /* Padding vertical */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Alignement vertical */
+    width: 90%; /* Largeur du nav */
+    margin: 0 auto; /* Centre horizontalement */
 }
 
+/* Préformatage du texte */
 .preformatted {
-    white-space: pre-wrap; /* Conserve les espaces et les retours à la ligne */
-    font-family: monospace; /* Optionnel, pour une apparence de texte préformaté */
-    margin: 10px; /* Ajoute des marges pour l'espacement */
+    white-space: pre-wrap; /* Conservation des espaces et retours à la ligne */
+    font-family: monospace; /* Police monospace */
+    margin: 10px; /* Marge autour du texte */
 }
 
+/* Logo */
 .logo h1 {
-    font-size: 24px;
-    cursor: pointer;
+    font-size: 24px; /* Taille du texte du logo */
+    cursor: pointer; /* Curseur main au survol */
 }
 
+/* Navigation */
 .nav-links {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Supprime les puces des listes */
+    display: flex; /* Utilisation de flexbox */
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 15px; /* Marge entre les éléments */
 }
 
 .nav-links a {
-    color: #00ffcc;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #00ffcc; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: color 0.3s ease; /* Transition pour la couleur */
 }
 
 .nav-links a:hover {
-    color: #ff6600;
+    color: #ff6600; /* Couleur des liens au survol */
 }
 
 /* Burger menu pour mobile */
 .burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+    display: none; /* Caché par défaut */
+    cursor: pointer; /* Curseur main au survol */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 5px; /* Espacement entre les éléments */
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
-    background: #00ffcc;
-    transition: all 0.3s ease;
+    width: 25px; /* Largeur des barres */
+    height: 3px; /* Hauteur des barres */
+    background: #00ffcc; /* Couleur des barres */
+    transition: all 0.3s ease; /* Transition fluide */
 }
 
 /* Sections */
 .home-section {
-    height: 100vh;
-    background: url('../assets/images/background.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100vh; /* Hauteur de la section */
+    background: url('../assets/images/background.jpg') no-repeat center center/cover; /* Image de fond */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center; /* Centre le texte */
 }
 
 .home-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 36px; /* Taille des sous-titres */
+    margin-bottom: 20px; /* Marge inférieure */
 }
 
 .home-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 18px; /* Taille des paragraphes */
+    margin-bottom: 30px; /* Marge inférieure */
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #00ffcc;
-    color: #121212;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px; /* Padding autour du texte */
+    background-color: #00ffcc; /* Couleur de fond du bouton */
+    color: #121212; /* Couleur du texte du bouton */
+    text-transform: uppercase; /* Texte en majuscules */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Texte en gras */
+    transition: background-color 0.3s ease; /* Transition pour la couleur de fond */
 }
 
 .btn:hover {
-    background-color: #ff6600;
+    background-color: #ff6600; /* Couleur de fond au survol */
 }
 
-/* About Section */
-.about-section, .projects-section, .contact-section, .retour-section{
-    padding: 60px 20px;
-    text-align: center;
+/* Sections supplémentaires */
+.about-section, .projects-section, .contact-section, .retour-section {
+    padding: 60px 20px; /* Padding autour du contenu */
+    text-align: center; /* Centre le texte */
 }
 
 #about-text, #project-corewar, #project-sylveria, #project-A-Maze-D, #project-Youtube-Downloader {
     color: #ffffff; /* Couleur du texte */
     font-size: 16px; /* Taille de la police */
-    margin: 10px; /* Marge pour l'espace */
-    padding: 10px; /* Padding pour l'espace intérieur */
+    margin: 10px; /* Marge autour des éléments */
+    padding: 10px; /* Padding intérieur des éléments */
 }
 
+/* Grille de projets */
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1 1 calc(33.333% - 20px); /* Trois éléments par ligne avec un espace de 20px entre eux */
-    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
-    gap: 20px;
+    display: flex; /* Utilisation de flexbox */
+    flex-wrap: wrap; /* Répartition sur plusieurs lignes */
+    justify-content: center; /* Centre horizontalement */
+    flex: 1 1 calc(33.333% - 20px); /* Largeur des éléments */
+    box-sizing: border-box; /* Inclut les marges et bordures */
+    gap: 20px; /* Espacement entre les éléments */
 }
 
 .project-grid img {
-    width: 400px; /* Ajuste l'image à la largeur du conteneur */
-    max-width: 100%; /* Ne dépasse pas la largeur du conteneur */
+    width: 400px; /* Largeur des images */
+    max-width: 100%; /* Limite à la largeur du conteneur */
     height: auto; /* Conserve le ratio d'aspect */
-    border-radius: 8px; /* Coins arrondis pour l'image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour l'image */
-    transition: transform 0.3s ease; /* Effet de transition au survol */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    transition: transform 0.3s ease; /* Transition pour la transformation */
 }
 
 .project-grid img:hover {
-    transform: scale(1.25); /* Agrandissement léger au survol */
+    transform: scale(1.25); /* Agrandissement au survol */
 }
+
 .project-card {
-    background: #121212;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 300px;
-    transition: transform 0.3s ease;
+    background: #121212; /* Couleur de fond des cartes */
+    padding: 20px; /* Padding autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    max-width: 300px; /* Largeur maximale des cartes */
+    transition: transform 0.3s ease; /* Transition pour la transformation */
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Déplacement au survol */
 }
 
 .project-card img {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 100%; /* Limite à la largeur du conteneur */
+    border-radius: 8px; /* Coins arrondis */
 }
 
 .social-icons a {
-    margin: 0 10px;
-    color: #00ffcc;
-    text-decoration: none;
+    margin: 0 10px; /* Marge autour des icônes sociales */
+    color: #00ffcc; /* Couleur des icônes sociales */
+    text-decoration: none; /* Supprime le soulignement */
 }
 
 .social-icons a:hover {
-    color: #ff6600;
+    color: #ff6600; /* Couleur des icônes sociales au survol */
 }
 
 /* Footer */
 footer {
-    background: #121212;
-    padding: 20px;
-    text-align: center;
+    background: #121212; /* Couleur de fond du pied de page */
+    padding: 20px; /* Padding autour du contenu */
+    text-align: center; /* Centre le texte */
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #121212;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
+        display: none; /* Cache les liens de navigation sur petits écrans */
+        flex-direction: column; /* Aligne les éléments en colonne */
+        background: #121212; /* Couleur de fond pour mobile */
+        position: absolute; /* Position absolue pour le menu */
+        top: 60px; /* Position sous le header */
+        right: 0; /* Alignement à droite */
+        width: 100%; /* Largeur à 100% */
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Affiche les liens de navigation lorsqu'actifs */
     }
 
     .burger {
-        display: flex;
+        display: flex; /* Affiche le menu burger sur petits écrans */
     }
 
     .home-content h2 {
-        font-size: 28px;
+        font-size: 28px; /* Taille des sous-titres sur petits écrans */
     }
 
     .home-content p {
-        font-size: 16px;
+        font-size: 16px; /* Taille des paragraphes sur petits écrans */
     }
 }
