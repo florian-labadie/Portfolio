@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Florian LABADIE</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
@@ -28,7 +26,15 @@
     </header>
 
     <section id="home" class="home-section">
-        <div class="home-content animate__animated animate__fadeIn">
+        <!-- Vidéo en arrière-plan -->
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="https://www.exemple.com/one-piece-video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas les vidéos HTML5.
+            </video>
+        </div>
+    
+        <div class="home-content">
             <h2>Bienvenue dans mon univers</h2>
             <p>Développeur passionné par le monde de l'informatique et du développement</p>
             <a href="#projects" class="btn">Voir mes projets</a>
@@ -37,6 +43,10 @@
 
     <section id="about" class="about-section">
         <h2>À propos de moi</h2>
+        <button id="toggleCvBtn" class="btn">Mon CV</button>
+            <div id="cvContainer">
+                <iframe src="assets/MyCV.pdf"></iframe>
+            </div>
         <p id="about-text" class="preformatted"></p>
     </section>
 
@@ -46,25 +56,25 @@
             <!-- Projet 1 -->
             <div class="CoreWar">
                 <h3>CoreWar</h3>
-                <img src="assets/images/Corewar.png" alt="CoreWar">
+                <img src="./assets/images/Corewar.png" alt="CoreWar">
                 <p id="project-corewar" class="preformatted"></p><br>
                 <a href="https://github.com/florian-labadie/Corewar" class="btn">Voir plus</a>
             </div><br>
             <div class="RPG-Sylveria">
                 <h3>RPG: Sylveria</h3>
-                <img src="assets/images/Sylveria.png" alt="Sylveria">
+                <img src="./assets/images/Sylveria.png" alt="Sylveria">
                 <p id="project-sylveria" class="preformatted"></p><br>
                 <a href="https://github.com/florian-labadie/My_RPG" class="btn">Voir plus</a>
             </div><br>
             <div class="A-Maze-D">
                 <h3>A-Maze-D</h3>
-                <img src="assets/images/A-Maze-D.jpg" alt="A-Maze-D">
+                <img src="./assets/images/A-Maze-D.jpg" alt="A-Maze-D">
                 <p id="project-A-Maze-D" class="preformatted"></p><br>
                 <a href="https://github.com/florian-labadie/A-Maze-D" class="btn">Voir plus</a>
             </div><br>
             <div class="Youtube-Downloader">
                 <h3>Youtube-Dowloader</h3>
-                <img src="assets/images/Youtube-Downloader.png" alt="Youtube-Downloader">
+                <img src="./assets/images/Youtube-Downloader.png" alt="Youtube-Downloader">
                 <p id="project-Youtube-Downloader" class="preformatted"></p><br>
                 <a href="https://github.com/florian-labadie/Youtube_Downloader" class="btn">Voir plus</a>
             </div><br>
@@ -91,7 +101,7 @@
         <p>© 2024 Florian LABADIE. Tous droits réservés.</p>
     </footer>
 
-    <script src="js/menu_burger.js"></script>
-    <script src="js/import_text.js"></script>
+    <script src="./js/menu_burger.js"></script>
+    <script src="./js/import_text.js"></script>
 </body>
 </html>
